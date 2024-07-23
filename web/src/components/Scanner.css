@@ -1,0 +1,105 @@
+.scanner {
+  position: relative;
+  width: 330px;
+  height: 445px;
+  background-image: url("../../public/images/fingerprint-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.scanner ::before,
+.scanner::after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+}
+.scanner::before {
+  width: calc(100% + 20px);
+  height: 85%;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+.scanner::after {
+  width: 80%;
+  height: calc(100% + 20px);
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scanner * {
+  z-index: 2;
+}
+.fingerprint {
+  width: 330px;
+  height: 445px;
+  position: relative;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shownanimation::before,
+.shownanimation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.shownanimation::before {
+  animation: anm-fingerprint 4s ease-in-out infinite;
+}
+.shownanimation::after {
+  height: 9px;
+  border-radius: 0px;
+  background-image: url(../images/scanner-line.png);
+  animation: anm-bar 4s ease-in-out infinite;
+}
+
+.message {
+  position: relative;
+  padding-top: 30px;
+  color: #2beeee;
+  font-size: 2.2em;
+  letter-spacing: 5px;
+  font-family: monospace;
+  text-transform: uppercase;
+  filter: drop-shadow(0 0 45px #2beeee);
+}
+.message::after {
+  overflow: hidden;
+  content: ".......";
+  display: inline-flex;
+  filter: drop-shadow(0 0 20px #2beeee);
+  animation: anm-dot 1s steps(6) infinite;
+}
+@keyframes anm-fingerprint {
+  0%,
+  100% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+}
+@keyframes anm-bar {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 100%;
+  }
+}
+@keyframes anm-dot {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 125px;
+  }
+}
