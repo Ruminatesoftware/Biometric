@@ -1,6 +1,6 @@
 <h1 align="center">Numpad Using Biometric System</h1>
 
-The Biometric Fingerprint Authentication System is a comprehensive solution that combines cutting-edge technology with user-centric design to provide a secure, efficient, and convenient method of access control.
+The Biometric Authentication System is a comprehensive solution that combines cutting-edge technology with user-centric design to provide a secure, efficient, and convenient method of access control using numpad input.
 
 ## Requirements
 
@@ -13,8 +13,7 @@ _A basic understanding of modern web development workflows. If you're unfamiliar
 
 ![Screenshot](images/Biometric.gif)
 
-The Biometric System is designed to provide secure and efficient access control using fingerprint authentication.
-This biometric system ensures high security and quick access by leveraging advanced fingerprint recognition technology.
+The Biometric System is designed to provide secure and efficient access control using a numpad for code entry. This system ensures high security and quick access by leveraging user-centric design and advanced authentication technology.
 
 ### Built With
 
@@ -55,15 +54,15 @@ Please follow the following steps for successful installation:
 
 This setup includes some utilities and examples to use as a foundation.
 
-1. **Initial Interaction:** The user begins by placing their finger on the designated screen area.
+1. **Initial Interaction:** The user begins by entering their access code using the designated numpad on the web interface.
 
-2. **Redirect to Scan Section:** Once the finger is detected, the system redirects to the scan section where the fingerprint is scanned and analyzed.
+2. **Redirect to Scan Section:** Once the access code is entered, the system simulates a fingerprint scanner animation.
 
-3. **Authentication Process:** The system then processes the scanned fingerprint to authenticate the user's identity.
+3. **Authentication Process:** 
 
-   i) Access Allowed: If the fingerprint matches a registered user in the system's database, an "Access Allowed" window is displayed, granting the user access.
+   i) If the access code matches a registered user in the system's database, an "Access Allowed" window is displayed, granting the user access.
 
-   ii) Access Denied: If the fingerprint does not match any registered user, an "Access Denied" window is shown, preventing unauthorized access.
+   ii) If the access code does not match any registered user, an "Access Denied" window is shown, preventing unauthorized access.
 
 ## Contributing
 
